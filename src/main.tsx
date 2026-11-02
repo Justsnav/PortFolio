@@ -5,4 +5,6 @@ import ResumePage from "./ResumePage";
 import "./styles.css";
 
 const root = createRoot(document.getElementById("root")!);
-root.render(<StrictMode>{window.location.pathname === "/resume" ? <ResumePage /> : <Portfolio />}</StrictMode>);
+const isResumePage = window.location.pathname.replace(/\/+$/, "") === "/resume";
+
+root.render(<StrictMode>{isResumePage ? <ResumePage /> : <Portfolio />}</StrictMode>);
