@@ -1,0 +1,13 @@
+node_modules/
+<<<<<<< HEAD
+.next/
+out/
+dist/
+*.tsbuildinfo
+.env*
+!.env.example
+*.log
+=======
+dist/
+.env
+>>>>>>> cec30be31e884927f5d9219dadb62505caa0baf1

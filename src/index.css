@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #fdf3c7;
+  --color-cream-dark: #f7e491;
+  --color-ink: #16160f;
+  --color-coral: #f97066;
+  --color-teal: #2dd4a7;
+  --color-forest: #0f5132;
+  --color-forest-light: #146b42;
+  --color-gold: #f4c542;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}
+
+.hard-border {
+  border: 3px solid var(--color-ink);
+}
+
+.hard-shadow {
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+}
+
+.hard-shadow-sm {
+  box-shadow: 4px 4px 0 0 var(--color-ink);
+}
+
+.hard-shadow-lg {
+  box-shadow: 8px 8px 0 0 var(--color-ink);
+}
+
+.press-effect {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.press-effect:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 0 var(--color-ink);
+}
+
+.press-effect:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 0 var(--color-ink);
+}
